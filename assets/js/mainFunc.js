@@ -41,6 +41,10 @@ document.onkeyup = function (e) {
 function moveCharacter(key) {
     var currentPos = $("#mario").css("left");
     var newPos = parseFloat(currentPos);
+    var marioWidth = parseFloat($("#mario").css("width"));
+    var pipeCurrentPos = parseFloat($("#pipe").css("left"));
+    var pipeWidth = parseFloat($("#pipe").css("width"));
+    var pipeHeight = parseFloat($("#pipe").css("height"));
     
     if(key == keys.left) {
         newPos -= 100;
@@ -53,6 +57,14 @@ function moveCharacter(key) {
 
     newPos = newPos.toString() + "px";
     $("#mario").css({left: newPos});
+    var marioCurrentPos = parseFloat(newPos);
+
+    console.log(marioWidth, marioCurrentPos, pipeCurrentPos);
+    if(((marioCurrentPos + marioWidth) >= pipeCurrentPos) && (marioCurrentPos <= (pipeCurrentPos + pipeWidth))) {
+        $("#mario").css("bottom", (100 + pipeHeight).toString() + "px");
+    } else {
+        $("#mario").css("bottom", "100px");
+    }
 };
 
 

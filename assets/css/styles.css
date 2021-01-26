@@ -6,7 +6,7 @@ body{
 
 ::-webkit-scrollbar {
     display: none;
-    }
+}
 
 #grass{
     background-image: url("../img/grass.png");
@@ -17,12 +17,21 @@ body{
 }
 
 #mario{
-    width:10%;
+    height:20%;
     position: absolute;
     bottom: 100px;
     left: 45%;
-    transition: left 0.25s;
+    transition: left 0.25s, bottom 0.25s;
 }
+
+#pipe{
+    position: absolute;
+    bottom: 100px;
+    left: 70%;
+    height: 10%;
+    width: 10%;
+}
+
 
 .flip{
     -webkit-transform: scaleX(-1);
