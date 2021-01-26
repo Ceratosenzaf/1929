@@ -1,0 +1,35 @@
+body{
+    background-image: url("../img/clouds.png");
+    background-size: cover;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+#grass{
+    background-image: url("../img/grass.png");
+    height: 100px;
+    width: 10000px;
+    position: absolute;
+    bottom: 0;
+}
+
+#mario{
+    width:10%;
+    position: absolute;
+    bottom: 100px;
+    left: 45%;
+    transition: left 0.25s;
+}
+
+.flip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.unflip{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
