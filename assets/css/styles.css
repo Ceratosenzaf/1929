@@ -24,6 +24,15 @@ body{
     transition: left 0.25s;
 }
 
+#wall{
+    background-image: url("../img/wall.png");
+    width: 792px;
+    height: 396px;
+    bottom: 40%;
+    left: 35%;
+    position: absolute;
+}
+
 .flip{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
