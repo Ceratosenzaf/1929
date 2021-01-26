@@ -1,0 +1,11 @@
+TODO
+
+Fixare movimento telecamera
+Fixare movimento
+
+Creare il livello
+
+Add salto
+Add monete
+Add php + db per gli score + dati + monete
+Add GUI di login + GUI presentazione
