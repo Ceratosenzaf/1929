@@ -1,1 +1,1 @@
-# 1929 History Project - Mari Browser Game
+# 1929 History Project - Mario Browser Game
